@@ -1,0 +1,10 @@
+<%id_user=User.find(@id)%>
+<div class='text-center'>
+<h1> Détails du gossiper </h1>
+
+
+<p> Prénom du gossiper : <%=id_user.first_name%> </p>
+<p> Nom du gossiper : <%=id_user.last_name %> </p>
+<p> Email du gossiper : <%=id_user.email %> </p>
+<p> Age du gossiper : <%=id_user.age %> </p>
+</div>

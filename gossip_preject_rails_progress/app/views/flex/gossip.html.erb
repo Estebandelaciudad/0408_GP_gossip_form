@@ -1,0 +1,13 @@
+<div class='ml-5'>
+<h1> Le potin en détails. </h1>
+<br/> 
+<p><b>Nom:</b> <%= Gossip.find(@id).title %></p>
+
+<p><b>Auteur:</b> <%= Gossip.find(@id).user.first_name %></p>
+
+<p><b>Contenu:</b> <%= Gossip.find(@id).content %> </p>
+
+<p><b>Date de création:</b> Gossip.find(@id).created_at</p>
+
+<%= link_to "Profil de l'auteur", author_path(Gossip.find(@id).user.id)%>
+</div>
